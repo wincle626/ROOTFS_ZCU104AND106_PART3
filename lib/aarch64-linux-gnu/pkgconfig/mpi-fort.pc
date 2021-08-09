@@ -1,0 +1,1 @@
+/etc/alternatives/mpi-fort.pc-aarch64-linux-gnu

@@ -1,0 +1,13 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib/aarch64-linux-gnu
+includedir=${prefix}/include
+
+Name: libmlx5
+Description: RDMA Core Userspace Library
+URL: https://github.com/linux-rdma/rdma-core
+Version: 1.12.28.0
+Libs: -L${libdir} -lmlx5 
+Libs.private: -lpthread
+Requires.private: libibverbs
+Cflags: -I${includedir}
